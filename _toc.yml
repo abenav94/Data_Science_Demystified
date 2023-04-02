@@ -1,0 +1,13 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: README.md
+options:  
+  numbered: True
+chapters:
+- file: ML Problem Approach/ML Problem Approach.md
+  sections:
+  - file: ML Problem Approach/Hypothesis Generation/Hypothesis Generation.md
+    sections:
+    - file: ML Problem Approach/Hypothesis Generation/Hypothesis Introduction.md
