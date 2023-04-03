@@ -36,7 +36,7 @@ html:
   use_repository_button: true
   comments:
     utterances:
-      repo: "khuyentran1401/Efficient_Python_tricks_and_tools_for_data_scientists"
+      repo: "abenav94/Data_Science_Demystified"
 
 theme: jekyll-theme-slate
 
