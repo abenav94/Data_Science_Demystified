@@ -6,9 +6,11 @@ root: README.md
 options:  
   numbered: True
 chapters:
-- file: ML Problem Approach/ML Problem Approach.md
+
+- file: Deep Learning/Deep Learning.md 
   sections:
-  - file: ML Problem Approach/Hypothesis Generation/Hypothesis Generation.md
-    sections:
-    - file: ML Problem Approach/Hypothesis Generation/Hypothesis Introduction.md
-- file: Deep Learning/Deep Learning.md    
+  - file: Deep Learning/CNN/CNN.md
+    section:
+    - file: Deep Learning/CNN/RNN/RNN.md
+      section: 
+      - file: Deep Learning/CNN/RNN/LSTM/LSTM.md
