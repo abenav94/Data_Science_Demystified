@@ -6,8 +6,50 @@ root: README.md
 options:  
   numbered: True
 chapters:
-- file: ML Problem Approach/ML Problem Approach.md
+- file: Classification/Classification.md
   sections:
-  - file: ML Problem Approach/Hypothesis Generation/Hypothesis Generation.md
+  - file: Classification/Classification Concepts.md
+  - file: Classification/Classification Metrics.md
+  - file: Classification/Multi Class Classification.md
+  - file: Classification/Multi Label Classification.md
+  - file: Classification/Classification Model Selection.md
+  sections:
+  - file: Classification/Widely used Methods/Widely used Methods.md
     sections:
-    - file: ML Problem Approach/Hypothesis Generation/Hypothesis Introduction.md
+    - file: Widely used Methods/Logistic Regression.md
+    - file: Widely used Methods/Naive Bayes.md
+    - file: Widely used Methods/SVM (Support Vector Machine).md
+    - file: Widely used Methods/KNN (K-Nearest Neighbors Algorithm).md
+  sections:
+  - file: Classification/Decision Tree/Decision Tree.md
+    sections:
+    - file: Decision Tree/ID3.md
+    - file: Decision Tree/CART.md
+    - file: Decision Tree/CHAID.md
+  sections:
+  - file: Classification/Ensemble/Ensemble.md
+    sections:
+    - file: Ensemble/Bagging (Bootstraped Aggregation).md
+    - file: Ensemble/Boosting.md
+chapters:
+- file: Recommendation System/Recommendation System.md
+  sections:
+  - file: Recommendation System/Collaborative Based Filtering.md
+  - file: Recommendation System/Content Based Filtering.md
+  - file: Recommendation System/Evaluation of Recommender Algorithms.md
+  - file: Recommendation System/Singular Value Decompostion.md
+chapters:
+- file: Unsupervised Learning/Unsupervised Learning.md
+  sections:
+  - file: Unsupervised Learning/Concepts.md
+  - file: Unsupervised Learning/Gaussian-Mix Model (EM).md
+  - file: Unsupervised Learning/PCA (Principle Component Analysis).md
+  - file: Unsupervised Learning/Self Organizing Maps (SOM).md
+  - file: Unsupervised Learning/UL Evaluation Metrics.md
+  sections:
+  - file: Unsupervised Learning/Clustering/Clustering.md
+    sections:
+    - file: Clustering/Fuzzy Clustering.md
+    - file: Clustering/Hierarchical Cluster.md
+    - file: Clustering/K-Means.md
+    - file: Clustering/K-Medians.md
