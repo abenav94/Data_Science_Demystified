@@ -1,4 +1,6 @@
-## What is Classification?
+## Classification
+
+What is Classification?
 
 Classification is defined as the process of recognition, understanding, and grouping of objects and ideas into preset categories a.k.a “sub-populations.” With the help of these pre-categorized training datasets, classification in machine learning programs leverage a wide range of algorithms to classify future datasets into respective and relevant categories.
 
