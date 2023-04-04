@@ -11,3 +11,4 @@ chapters:
   - file: ML Problem Approach/Hypothesis Generation/Hypothesis Generation.md
     sections:
     - file: ML Problem Approach/Hypothesis Generation/Hypothesis Introduction.md
+- file: Deep Learning/Deep Learning.md    
