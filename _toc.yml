@@ -9,9 +9,9 @@ chapters:
 
 - file: Deep Learning/Deep Learning.md 
   sections:
-  - file: Deep Learning/CNN/CNN.md
-  - file: Deep Learning/RNN/RNN.md
-  - file: Deep Learning/LSTM/LSTM.md
+  - file: Deep Learning/CNN/cnn.md
+  - file: Deep Learning/RNN/rnn.md
+  - file: Deep Learning/LSTM/lstm.md
   
 - file: Natural Language Processing/natural language processing.md 
   sections:
