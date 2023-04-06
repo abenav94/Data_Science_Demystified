@@ -1,2 +1,2 @@
-# Data_Science_Demystified
-Data Science Content Simplified for All
+# Data Science Demystified
+Data Science Content Webpages deployed via Github Actions
