@@ -1,2 +1,2 @@
-## CNN
+## DevOps vs MLOps
 

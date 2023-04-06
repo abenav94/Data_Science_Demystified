@@ -1,2 +1,2 @@
-## DS PM Framework
+## DS Project Management Framework
 

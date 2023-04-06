@@ -34,7 +34,7 @@ chapters:
   - file: MLOps/MLOps Landscape/mlops landscape.md
   - file: MLOps/DevOps vs MLOps/devops vs mlops.md 
   - file: MLOps/Feature Stores/feature stores.md
-  - file: MLOps/Model Goverance/model goverance.md
+  - file: MLOps/Model Governance/model governance.md
   - file: MLOps/Model Monitoring/model monitoring.md 
   - file: MLOps/Model Deployment/model deployment.md
   
