@@ -17,7 +17,7 @@ chapters:
   sections:
   - file: Natural Language Processing/Representation Methods/represenation methods.md
     sections: 
-    - file: Natural Language Processing/Bag of Words/bag of words.md
+    - file: Natural Language Processing/Representation Methods/Bag of Words/bag of words.md
   - file: Natural Language Processing/Pre-Processing/pre-processing.md
   - file: Natural Language Processing/Word2Vec/word2vec.md 
   - file: Natural Language Processing/NLP Applications/nlp applications.md   
