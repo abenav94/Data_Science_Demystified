@@ -1,1 +1,1 @@
-## Widely UUsed Methods
+## Widely Used Methods
