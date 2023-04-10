@@ -8,48 +8,77 @@ options:
 chapters:
 - file: Classification/Classification.md
   sections:
-  - file: Classification/Classification Concepts.md
-  - file: Classification/Classification Metrics.md
-  - file: Classification/Multi Class Classification.md
-  - file: Classification/Multi Label Classification.md
-  - file: Classification/Classification Model Selection.md
+  - file: Classification/Classification Concepts/Classification Concepts.md
+  - file: Classification/Classification Metrics/Classification Metrics.md
+  - file: Classification/Multi Class Classification/Multi Class Classification.md
+  - file: Classification/Multi Label Classification/Multi Label Classification.md
+  - file: Classification/Classification Model Selection/Classification Model Selection.md
   sections:
   - file: Classification/Widely used Methods/Widely used Methods.md
     sections:
-    - file: Widely used Methods/Logistic Regression.md
-    - file: Widely used Methods/Naive Bayes.md
-    - file: Widely used Methods/SVM (Support Vector Machine).md
-    - file: Widely used Methods/KNN (K-Nearest Neighbors Algorithm).md
-  sections:
-  - file: Classification/Decision Tree/Decision Tree.md
+    - file: Classification/Widely used Methods/Logistic Regression/Logistic Regression.md
+    - file: Classification/Widely used Methods/Naive Bayes/Naive Bayes.md
+    - file: Classification/Widely used Methods/SVM (Support Vector Machine)/SVM (Support Vector Machine).md
+    - file: Classification/Widely used Methods/KNN (K-Nearest Neighbors Algorithm).md
+  - file: Classification/Widely used Methods/Decision Tree/Decision Tree.md
     sections:
-    - file: Decision Tree/ID3.md
-    - file: Decision Tree/CART.md
-    - file: Decision Tree/CHAID.md
-  sections:
-  - file: Classification/Ensemble/Ensemble.md
+    - file: Classification/Widely used Methods/Decision Tree/ID3.md
+    - file: Classification/Widely used Methods/Decision Tree/CART.md
+    - file: Classification/Widely used Methods/Decision Tree/CHAID.md
+  - file: Classification/Widely used Methods/Ensemble/Ensemble.md
     sections:
-    - file: Ensemble/Bagging (Bootstraped Aggregation).md
-    - file: Ensemble/Boosting.md
+    - file: Classification/Widely used Methods/Ensemble/Bagging (Bootstraped Aggregation).md
+    - file: Classification/Widely used Methods/Ensemble/Boosting.md
 chapters:
 - file: Recommendation System/Recommendation System.md
   sections:
-  - file: Recommendation System/Collaborative Based Filtering.md
-  - file: Recommendation System/Content Based Filtering.md
-  - file: Recommendation System/Evaluation of Recommender Algorithms.md
-  - file: Recommendation System/Singular Value Decompostion.md
+  - file: Recommendation System/Collaborative Based Filtering/Collaborative Based Filtering.md
+  - file: Recommendation System/Content Based Filtering/Content Based Filtering.md
+  - file: Recommendation System/Evaluation of Recommender Algorithms/Evaluation of Recommender Algorithms.md
+  - file: Recommendation System/Singular Value Decompostion/Singular Value Decompostion.md
 chapters:
 - file: Unsupervised Learning/Unsupervised Learning.md
   sections:
-  - file: Unsupervised Learning/Concepts.md
-  - file: Unsupervised Learning/Gaussian-Mix Model (EM).md
-  - file: Unsupervised Learning/PCA (Principle Component Analysis).md
-  - file: Unsupervised Learning/Self Organizing Maps (SOM).md
-  - file: Unsupervised Learning/UL Evaluation Metrics.md
+  - file: Unsupervised Learning/Concepts/Concepts.md
+  - file: Unsupervised Learning/Gaussian-Mix Model (EM)/Gaussian-Mix Model (EM).md
+  - file: Unsupervised Learning/PCA (Principle Component Analysis)/PCA (Principle Component Analysis).md
+  - file: Unsupervised Learning/Self Organizing Maps (SOM)/Self Organizing Maps (SOM).md
+  - file: Unsupervised Learning/UL Evaluation Metrics/UL Evaluation Metrics.md
   sections:
   - file: Unsupervised Learning/Clustering/Clustering.md
     sections:
-    - file: Clustering/Fuzzy Clustering.md
-    - file: Clustering/Hierarchical Cluster.md
-    - file: Clustering/K-Means.md
-    - file: Clustering/K-Medians.md
+    - file: Unsupervised Learning/Clustering/Fuzzy Clustering.md
+    - file: Unsupervised Learning/Clustering/Hierarchical Cluster.md
+    - file: Unsupervised Learning/Clustering/K-Means.md
+    - file: Unsupervised Learning/Clustering/K-Medians.md
+chapters:
+- file: Time Series Analysis/Time Series Analysis.md
+  sections:
+  - file: Time Series Analysis/Time-Series Concepts/Time-Series Concepts.md
+  - file: Time Series Analysis/AutoCorrelation and Partial AutoCorrelation/AutoCorrelation and Partial AutoCorrelation.md 
+  - file: Time Series Analysis/Classical Time Series Models/Classical Time Series Models.md
+    sections:
+    - file: Time Series Analysis/Classical Time Series Models/Univariate Time Series/Univariate Time Series.md
+      sections:
+      - file: Time Series Analysis/Classical Time Series Models/Univariate Time Series/ARIMA.md
+      - file: Time Series Analysis/Classical Time Series Models/Univariate Time Series/SARIMA.md
+      - file: Time Series Analysis/Classical Time Series Models/Univariate Time Series/ETS.md
+      - file: Time Series Analysis/Classical Time Series Models/Univariate Time Series/Prophet.md
+      - file: Time Series Analysis/Classical Time Series Models/Univariate Time Series/UCM.md
+      - file: Time Series Analysis/Classical Time Series Models/Univariate Time Series/Croston.md
+    - file: Time Series Analysis/Classical Time Series Models/Multivariate Time Series/Multivariate Time Series.md 
+      sections:
+      - file: Time Series Analysis/Classical Time Series Models/Multivariate Time Series/ARIMAX.md
+      - file: Time Series Analysis/Classical Time Series Models/Multivariate Time Series/VAR.md
+      - file: Time Series Analysis/Classical Time Series Models/Multivariate Time Series/VARMA and VARMAX.md
+      - file: Time Series Analysis/Classical Time Series Models/Multivariate Time Series/VECM.md
+  - file: Time Series Analysis/Stationarity Tests/Stationarity Tests.md
+  - file: Time Series Analysis/Stationary vs Non Stationary Time Series/Stationary vs Non Stationary Time Series.md
+  - file: Time Series Analysis/Time Series Decomposition/Time Series Decomposition.md
+  - file: Time Series Analysis/Advanced Time Series/Advanced Time Series.md
+    sections:
+    - file: Time Series Analysis/Advanced Time Series/FB Prophet.md
+    - file: Time Series Analysis/Advanced Time Series/Gluon TS.md
+    - file: Time Series Analysis/Advanced Time Series/GreyKite.md
+  - file: Time Series Analysis/Time Series Forecasting using Neural Networks/Time Series Forecasting using Neural Networks.md
+  - file: Time Series Analysis/TS Evaluation Metrics/TS Evaluation Metrics.md
