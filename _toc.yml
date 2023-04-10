@@ -126,3 +126,33 @@ chapters:
     sections:
     - file: Regression/Widely Used Techniques/Linear Models.md
     - file: Regression/Widely Used Techniques/Non Linear Models.md
+
+- file: Deep Learning/Deep Learning.md 
+  sections:
+  - file: Deep Learning/CNN/cnn.md
+  - file: Deep Learning/RNN/rnn.md
+  - file: Deep Learning/LSTM/lstm.md
+- file: Natural Language Processing/natural language processing.md 
+  sections:
+  - file: Natural Language Processing/Representation Methods/represenation methods.md
+    sections: 
+    - file: Natural Language Processing/Representation Methods/Bag of Words/bag of words.md
+  - file: Natural Language Processing/Pre-Processing/pre-processing.md
+  - file: Natural Language Processing/Word2Vec/word2vec.md 
+  - file: Natural Language Processing/NLP Applications/nlp applications.md
+- file: DS Project Management Framework/ds pm framework.md 
+  sections:
+  - file: DS Project Management Framework/CRISP DM/crisp dm.md
+  - file: DS Project Management Framework/SEMMA/semma.md
+  - file: DS Project Management Framework/KDD/kdd.md  
+
+- file: MLOps/mlops.md 
+  sections:
+  - file: MLOps/MLOps Overview/mlops overview.md
+  - file: MLOps/MLOps Landscape/mlops landscape.md
+  - file: MLOps/DevOps vs MLOps/devops vs mlops.md 
+  - file: MLOps/Feature Stores/feature stores.md
+  - file: MLOps/Model Governance/model governance.md
+  - file: MLOps/Model Monitoring/model monitoring.md 
+  - file: MLOps/Model Deployment/model deployment.md
+
