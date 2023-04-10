@@ -138,8 +138,7 @@ chapters:
     - file: Natural Language Processing/Representation Methods/Bag of Words/bag of words.md
   - file: Natural Language Processing/Pre-Processing/pre-processing.md
   - file: Natural Language Processing/Word2Vec/word2vec.md 
-  - file: Natural Language Processing/NLP Applications/nlp applications.md   
-  
+  - file: Natural Language Processing/NLP Applications/nlp applications.md
 - file: DS Project Management Framework/ds pm framework.md 
   sections:
   - file: DS Project Management Framework/CRISP DM/crisp dm.md
