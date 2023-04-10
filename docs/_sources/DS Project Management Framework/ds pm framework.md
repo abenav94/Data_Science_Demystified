@@ -1,2 +1,0 @@
-## DS Project Management Framework
-
