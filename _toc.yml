@@ -126,6 +126,7 @@ chapters:
     sections:
     - file: Regression/Widely Used Techniques/Linear Models.md
     - file: Regression/Widely Used Techniques/Non Linear Models.md
+
 - file: Deep Learning/Deep Learning.md 
   sections:
   - file: Deep Learning/CNN/cnn.md
@@ -154,3 +155,4 @@ chapters:
   - file: MLOps/Model Governance/model governance.md
   - file: MLOps/Model Monitoring/model monitoring.md 
   - file: MLOps/Model Deployment/model deployment.md
+
