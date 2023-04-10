@@ -6,13 +6,131 @@ root: README.md
 options:  
   numbered: True
 chapters:
-
+- file: Mathematics Fundamentals/Mathematics Fundamentals.md
+  sections:
+  - file: Mathematics Fundamentals/Linear Algebra/Linear Algebra.md
+    sections:
+    - file: Mathematics Fundamentals/Linear Algebra/The Mindmap of Concepts.md
+    - file: Mathematics Fundamentals/Linear Algebra/Transformations.md
+    - file: Mathematics Fundamentals/Linear Algebra/Eigen Values and Vectors.md
+    - file: Mathematics Fundamentals/Linear Algebra/Decomposition Techniques.md
+    - file: Mathematics Fundamentals/Linear Algebra/Advanced Topics.md
+    - file: Mathematics Fundamentals/Linear Algebra/Applications in Data Science.md
+  - file: Mathematics Fundamentals/Calculus/Calculus.md
+    sections:
+    - file: Mathematics Fundamentals/Calculus/Calculus Fundamentals.md
+    - file: Mathematics Fundamentals/Calculus/Functions and Derivatives.md
+    - file: Mathematics Fundamentals/Calculus/Maxima and Minima.md
+    - file: Mathematics Fundamentals/Calculus/Function Chaining.md
+    - file: Mathematics Fundamentals/Calculus/Applications in Data Science.md
+  - file: Mathematics Fundamentals/Optimization/Optimization.md
+- file: ML Problem Approach/ML Problem Approach.md
+  sections:
+  - file: ML Problem Approach/Hypothesis Generation/Hypothesis Generation.md
+    sections:
+    - file: ML Problem Approach/Hypothesis Generation/Hypothesis Introduction.md
+    - file: ML Problem Approach/Hypothesis Generation/Characteristics of a Good Hypothesis.md
+    - file: ML Problem Approach/Hypothesis Generation/Significance of Hypothesis Generation.md
+    - file: ML Problem Approach/Hypothesis Generation/Hypothesis Generation Frameworks.md
+      sections:
+      - file: ML Problem Approach/Hypothesis Generation/Issue Tree.md
+      - file: ML Problem Approach/Hypothesis Generation/Mind Map.md
+      - file: ML Problem Approach/Hypothesis Generation/Fishbone Diagram.md
+      - file: ML Problem Approach/Hypothesis Generation/Pyramid Approach.md
+  - file: ML Problem Approach/Data Understanding/Data Understanding.md
+    sections:
+    - file: ML Problem Approach/Data Understanding/Exploratory Analysis.md
+      sections:
+      - file: ML Problem Approach/Data Understanding/Distribution Analysis.md
+      - file: ML Problem Approach/Data Understanding/Correlation Analysis.md
+      - file: ML Problem Approach/Data Understanding/Trend Analysis.md
+      - file: ML Problem Approach/Data Understanding/Variable Importance.md
+      - file: ML Problem Approach/Data Understanding/Principal Component Analysis.md
+    - file: ML Problem Approach/Data Understanding/Domain Driven Analysis.md
+  - file: ML Problem Approach/Feature Engineering/Feature Engineering.md
+    sections:
+    - file: ML Problem Approach/Feature Engineering/Feature Encoding.md
+    - file: ML Problem Approach/Feature Engineering/Feature Transformation.md
+    - file: ML Problem Approach/Feature Engineering/Feature Scaling.md
+    - file: ML Problem Approach/Feature Engineering/Feature Discretization.md
+  - file: ML Problem Approach/Feature Selection/Feature Selection.md
+    sections:
+    - file: ML Problem Approach/Feature Selection/Filter Approach.md
+    - file: ML Problem Approach/Feature Selection/Wrapper Approach.md
+    - file: ML Problem Approach/Feature Selection/Embedded Approach.md
+    - file: ML Problem Approach/Feature Selection/Hybrid Approach.md
+  - file: ML Problem Approach/Handling Missing Data/Handling Missing Data.md
+    sections:
+    - file: ML Problem Approach/Handling Missing Data/Missing Data Pattern Detection.md
+    - file: ML Problem Approach/Handling Missing Data/Missing Data Deletion.md
+    - file: ML Problem Approach/Handling Missing Data/Missing Data Imputation.md
+      sections:
+      - file: ML Problem Approach/Handling Missing Data/Simple Imputation.md
+      - file: ML Problem Approach/Handling Missing Data/Multiple Imputation.md
+      - file: ML Problem Approach/Handling Missing Data/Model Based Imputation.md
+  - file: ML Problem Approach/Handling Outliers/Handling Outliers.md
+    sections:
+    - file: ML Problem Approach/Handling Outliers/Outlier Detection.md
+    - file: ML Problem Approach/Handling Outliers/Outlier Treatment.md
+  - file: ML Problem Approach/Hyperparameter Optimization/Hyperparameter Optimization.md
+    sections:
+    - file: ML Problem Approach/Hyperparameter Optimization/Grid Search.md
+    - file: ML Problem Approach/Hyperparameter Optimization/Random Search.md
+    - file: ML Problem Approach/Hyperparameter Optimization/Bayesian Search.md
+  - file: ML Problem Approach/Model Explainability/Model Explainability.md
+    sections:
+    - file: ML Problem Approach/Model Explainability/Local Explainability.md
+    - file: ML Problem Approach/Model Explainability/Global Explainability.md
+  - file: ML Problem Approach/Model Validation/Model Validation.md
+    sections:
+    - file: ML Problem Approach/Model Validation/Cross Validation.md
+    - file: ML Problem Approach/Model Validation/Evaluation Metrics.md
+    - file: ML Problem Approach/Model Validation/Learning Curves.md
+    - file: ML Problem Approach/Model Validation/Error Curves.md
+- file: Statistics/Statistics.md
+  sections:
+  - file: Statistics/Probability/Probability.md
+    sections:
+    - file: Statistics/Probability/Key Ideas.md
+    - file: Statistics/Probability/Probability Axioms.md
+    - file: Statistics/Probability/Types of Probability.md
+    - file: Statistics/Probability/Frequentist vs Bayesian Approach.md
+  - file: Statistics/Sampling/Sampling.md
+    sections:
+    - file: Statistics/Sampling/Types of Sampling.md
+    - file: Statistics/Sampling/Sampling Bias.md
+  - file: Statistics/Descriptive Statistics/Descriptive Statistics.md
+    sections:
+    - file: Statistics/Descriptive Statistics/Concepts.md
+    - file: Statistics/Descriptive Statistics/Types of Variables.md
+    - file: Statistics/Descriptive Statistics/Data Distribution.md
+    - file: Statistics/Descriptive Statistics/Measure of Central Tendency.md
+  - file: Statistics/Inferential Statistics/Inferential Statistics.md
+    sections:
+    - file: Statistics/Inferential Statistics/Core Ideas.md
+    - file: Statistics/Inferential Statistics/Hypothesis Testing.md
+    - file: Statistics/Inferential Statistics/Confidence Interval.md
+    - file: Statistics/Inferential Statistics/Central Limit Theorem.md
+    - file: Statistics/Inferential Statistics/Correlation vs Causation.md
+  - file: Statistics/Hypothesis Testing/Hypothesis Testing.md
+    sections:
+    - file: Statistics/Hypothesis Testing/Core Ideas.md
+    - file: Statistics/Hypothesis Testing/Parametric Tests.md
+    - file: Statistics/Hypothesis Testing/Non Parametric Tests.md
+- file: Regression/Regression.md
+  sections:
+  - file: Regression/Fundamentals/Core Ideas.md
+  - file: Regression/Model Metrics/Model Metrics.md
+  - file: Regression/Model Selection/Model Selection.md
+  - file: Regression/Widely Used Techniques/Widely Used Techniques.md
+    sections:
+    - file: Regression/Widely Used Techniques/Linear Models.md
+    - file: Regression/Widely Used Techniques/Non Linear Models.md
 - file: Deep Learning/Deep Learning.md 
   sections:
   - file: Deep Learning/CNN/cnn.md
   - file: Deep Learning/RNN/rnn.md
   - file: Deep Learning/LSTM/lstm.md
-  
 - file: Natural Language Processing/natural language processing.md 
   sections:
   - file: Natural Language Processing/Representation Methods/represenation methods.md
@@ -37,4 +155,3 @@ chapters:
   - file: MLOps/Model Governance/model governance.md
   - file: MLOps/Model Monitoring/model monitoring.md 
   - file: MLOps/Model Deployment/model deployment.md
-  
