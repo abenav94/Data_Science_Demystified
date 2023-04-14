@@ -1,6 +1,6 @@
 ## Classification Concept
 
-## What is Classification?
+#### What is Classification?
 
 Classification is defined as the process of recognition, understanding, and grouping of objects and ideas into preset categories a.k.a “sub-populations.” With the help of these pre-categorized training datasets, classification in machine learning programs leverage a wide range of algorithms to classify future datasets into respective and relevant categories.
 
@@ -10,13 +10,13 @@ In short, classification is a form of “pattern recognition,”. Here, classifi
 
 In the below example, the classification model classifies apple and melon from the given set of input data 
 
-## What is Classification Algorithm?
+#### What is Classification Algorithm?
 
 Based on training data, the Classification algorithm is a Supervised Learning technique used to categorize new observations. In classification, a program uses the dataset or observations provided to learn how to categorize new observations into various classes or groups. For instance, 0 or 1, red or blue, yes or no, spam or not spam, etc. Targets, labels, or categories can all be used to describe classes. The Classification algorithm uses labelled input data because it is a supervised learning technique and comprises input and output information. A discrete output function (y) is transferred to an input variable in the classification process (x).
 
 In simple words, classification is a type of pattern recognition in which classification algorithms are performed on training data to discover the same pattern in new data sets.
 
-## Learners in Classification Problems
+#### Learners in Classification Problems
 
 There are two types of learners.
 
@@ -26,7 +26,7 @@ There are two types of learners.
 
 Now, let us discuss four types of Classification Tasks in Machine Learning.
 
-## Types Of Classification Tasks In Machine Learning
+#### Types Of Classification Tasks In Machine Learning
 Before diving into the four types of Classification Tasks in Machine Learning, let us first discuss Classification Predictive Modeling.
 
 Classification Predictive Modeling
