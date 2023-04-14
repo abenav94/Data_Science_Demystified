@@ -15,25 +15,25 @@ chapters:
   - file: Classification/Classification Model Selection/Classification Model Selection.md
   - file: Classification/Widely Used Methods/Widely Used Methods.md
     sections:
-    - file: Classification/Widely Used Methods/Logistic Regression/Logistic Regression.md
-    - file: Classification/Widely Used Methods/Naive Bayes/Naive Bayes.md
-    - file: Classification/Widely Used Methods/SVM (Support Vector Machine)/SVM (Support Vector Machine).md
-    - file: Classification/Widely Used Methods/KNN (K-Nearest Neighbors Algorithm)/KNN (K-Nearest Neighbors Algorithm).md
-    - file: Classification/Widely Used Methods/Decision Tree/Decision Tree.md
-      sections:
-      - file: Classification/Widely Used Methods/Decision Tree/ID3.md
-      - file: Classification/Widely Used Methods/Decision Tree/CART.md
-      - file: Classification/Widely Used Methods/Decision Tree/CHAID.md
-    - file: Classification/Widely Used Methods/Ensemble/Ensemble.md
-      sections:
-      - file: Classification/Widely Used Methods/Ensemble/Bagging (Bootstraped Aggregation).md
-      - file: Classification/Widely Used Methods/Ensemble/Boosting.md
+    - file: Classification/Widely Used Methods/Logistic Regression.md
+    - file: Classification/Widely Used Methods/Naive Bayes.md
+    - file: Classification/Widely Used Methods/SVM (Support Vector Machine).md
+    - file: Classification/Widely Used Methods/KNN (K-Nearest Neighbors Algorithm).md
+  - file: Classification/Decision Tree/Decision Tree.md
+    sections:
+    - file: Classification/Decision Tree/ID3.md
+    - file: Classification/Decision Tree/CART.md
+    - file: Classification/Decision Tree/CHAID.md
+  - file: Classification/Ensemble/Ensemble.md
+    sections:
+    - file: Classification/Ensemble/Bagging (Bootstraped Aggregation).md
+    - file: Classification/Ensemble/Boosting.md
 - file: Recommendation System/Recommendation System.md
   sections:
   - file: Recommendation System/Collaborative Based Filtering/Collaborative Based Filtering.md
   - file: Recommendation System/Content Based Filtering/Content Based Filtering.md
   - file: Recommendation System/Evaluation of Recommender Algorithms/Evaluation of Recommender Algorithms.md
-  - file: Recommendation System/Singular Value Decompostion/Singular Value Decompostion.md
+  - file: Recommendation System/Singular Value Decomposition/Singular Value Decomposition.md
 - file: Unsupervised Learning/Unsupervised Learning.md
   sections:
   - file: Unsupervised Learning/Concepts/Concepts.md
