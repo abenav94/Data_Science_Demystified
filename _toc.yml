@@ -13,22 +13,22 @@ chapters:
   - file: Classification/Multi Class Classification/Multi Class Classification.md
   - file: Classification/Multi Label Classification/Multi Label Classification.md
   - file: Classification/Classification Model Selection/Classification Model Selection.md
-  sections:
-  - file: Classification/Widely Used Methods/Widely Used Methods.md
+    sections:
+    - file: Classification/Widely Used Methods/Widely Used Methods.md
     sections:
     - file: Classification/Widely Used Methods/Logistic Regression/Logistic Regression.md
     - file: Classification/Widely Used Methods/Naive Bayes/Naive Bayes.md
     - file: Classification/Widely Used Methods/SVM (Support Vector Machine)/SVM (Support Vector Machine).md
     - file: Classification/Widely Used Methods/KNN (K-Nearest Neighbors Algorithm)/KNN (K-Nearest Neighbors Algorithm).md
-  - file: Classification/Widely Used Methods/Decision Tree/Decision Tree.md
-    sections:
-    - file: Classification/Widely Used Methods/Decision Tree/ID3.md
-    - file: Classification/Widely Used Methods/Decision Tree/CART.md
-    - file: Classification/Widely Used Methods/Decision Tree/CHAID.md
-  - file: Classification/Widely Used Methods/Ensemble/Ensemble.md
-    sections:
-    - file: Classification/Widely Used Methods/Ensemble/Bagging (Bootstraped Aggregation).md
-    - file: Classification/Widely Used Methods/Ensemble/Boosting.md
+    - file: Classification/Widely Used Methods/Decision Tree/Decision Tree.md
+      sections:
+      - file: Classification/Widely Used Methods/Decision Tree/ID3.md
+      - file: Classification/Widely Used Methods/Decision Tree/CART.md
+      - file: Classification/Widely Used Methods/Decision Tree/CHAID.md
+    - file: Classification/Widely Used Methods/Ensemble/Ensemble.md
+      sections:
+      - file: Classification/Widely Used Methods/Ensemble/Bagging (Bootstraped Aggregation).md
+      - file: Classification/Widely Used Methods/Ensemble/Boosting.md
 chapters:
 - file: Recommendation System/Recommendation System.md
   sections:
@@ -44,7 +44,6 @@ chapters:
   - file: Unsupervised Learning/PCA (Principle Component Analysis)/PCA (Principle Component Analysis).md
   - file: Unsupervised Learning/Self Organizing Maps (SOM)/Self Organizing Maps (SOM).md
   - file: Unsupervised Learning/UL Evaluation Metrics/UL Evaluation Metrics.md
-  sections:
   - file: Unsupervised Learning/Clustering/Clustering.md
     sections:
     - file: Unsupervised Learning/Clustering/Fuzzy Clustering.md
