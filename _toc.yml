@@ -8,26 +8,26 @@ options:
 chapters:
 - file: Classification Technique/Classification Technique.md
   sections:
-  - file: Classification/Classification Concept/Classification Concept.md
-  - file: Classification/Classification Metrics/Classification Metrics.md
-  - file: Classification/Multi Class Classification/Multi Class Classification.md
-  - file: Classification/Multi Label Classification/Multi Label Classification.md
-  - file: Classification/Classification Model Selection/Classification Model Selection.md
-  - file: Classification/Widely Used Methods/Widely Used Methods.md
+  - file: Classification Technique/Classification Concept/Classification Concept.md
+  - file: Classification Technique/Classification Metrics/Classification Metrics.md
+  - file: Classification Technique/Multi Class Classification/Multi Class Classification.md
+  - file: Classification Technique/Multi Label Classification/Multi Label Classification.md
+  - file: Classification Technique/Classification Model Selection/Classification Model Selection.md
+  - file: Classification Technique/Widely Used Methods/Widely Used Methods.md
     sections:
-    - file: Classification/Widely Used Methods/Logistic Regression.md
-    - file: Classification/Widely Used Methods/Naive Bayes.md
-    - file: Classification/Widely Used Methods/SVM (Support Vector Machine).md
-    - file: Classification/Widely Used Methods/KNN (K-Nearest Neighbors Algorithm).md
-  - file: Classification/Decision Tree/Decision Tree.md
+    - file: Classification Technique/Widely Used Methods/Logistic Regression.md
+    - file: Classification Technique/Widely Used Methods/Naive Bayes.md
+    - file: Classification Technique/Widely Used Methods/SVM (Support Vector Machine).md
+    - file: Classification Technique/Widely Used Methods/KNN (K-Nearest Neighbors Algorithm).md
+  - file: Classification Technique/Decision Tree/Decision Tree.md
     sections:
-    - file: Classification/Decision Tree/ID3.md
-    - file: Classification/Decision Tree/CART.md
-    - file: Classification/Decision Tree/CHAID.md
-  - file: Classification/Ensemble/Ensemble.md
+    - file: Classification Technique/Decision Tree/ID3.md
+    - file: Classification Technique/Decision Tree/CART.md
+    - file: Classification Technique/Decision Tree/CHAID.md
+  - file: Classification Technique/Ensemble/Ensemble.md
     sections:
-    - file: Classification/Ensemble/Bagging (Bootstraped Aggregation).md
-    - file: Classification/Ensemble/Boosting.md
+    - file: Classification Technique/Ensemble/Bagging (Bootstraped Aggregation).md
+    - file: Classification Technique/Ensemble/Boosting.md
 - file: Recommendation System/Recommendation System.md
   sections:
   - file: Recommendation System/Collaborative Based Filtering/Collaborative Based Filtering.md
