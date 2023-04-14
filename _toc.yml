@@ -76,4 +76,7 @@ chapters:
     - file: Time Series Analysis/Advanced Time Series/Gluon TS.md
     - file: Time Series Analysis/Advanced Time Series/GreyKite.md
   - file: Time Series Analysis/Time Series Forecasting using Neural Networks/Time Series Forecasting using Neural Networks.md
+    sections:
+    - file: Time Series Analysis/Time Series Forecasting using Neural Networks/LSTM.md
+    - file: Time Series Analysis/Time Series Forecasting using Neural Networks/RNN.md
   - file: Time Series Analysis/TS Evaluation Metrics/TS Evaluation Metrics.md
