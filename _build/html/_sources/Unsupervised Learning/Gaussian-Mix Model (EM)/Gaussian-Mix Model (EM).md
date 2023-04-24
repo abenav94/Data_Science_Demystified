@@ -1,1 +1,0 @@
-## Gaussian-Mix Model (EM)
