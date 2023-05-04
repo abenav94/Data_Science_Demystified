@@ -1,0 +1,759 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>1.2.4. Function Chaining &#8212; Data Science Demystified</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "abenav94/Data_Science_Demystified");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Mathematics Fundamentals/Calculus/Function Chaining';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="1.2.5. Applications in Data Science" href="Applications%20in%20Data%20Science.html" />
+    <link rel="prev" title="1.2.3. Maxima and Minima" href="Maxima%20and%20Minima.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../README.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Data Science Demystified</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../README.html">
+                    Data_Science_Demystified
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../Mathematics%20Fundamentals.html">1. Mathematics Fundamentals</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Linear%20Algebra/Linear%20Algebra.html">1.1. Linear Algebra Fundamentals</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Linear%20Algebra/The%20Mindmap%20of%20Concepts.html">1.1.1. MindMap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Linear%20Algebra/Transformations.html">1.1.2. Linear Algebra Transformations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Linear%20Algebra/Eigen%20Values%20and%20Vectors.html">1.1.3. Eigen Values and Vectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Linear%20Algebra/Decomposition%20Techniques.html">1.1.4. Decomposition Techniques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Linear%20Algebra/Advanced%20Topics.html">1.1.5. Advanced Topics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Linear%20Algebra/Applications%20in%20Data%20Science.html">1.1.6. Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="Calculus.html">1.2. Calculus</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Calculus%20Fundamentals.html">1.2.1. Calculus Fundamentals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Functions%20and%20Derivatives.html">1.2.2. Functions and Derivatives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Maxima%20and%20Minima.html">1.2.3. Maxima and Minima</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">1.2.4. Function Chaining</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Applications%20in%20Data%20Science.html">1.2.5. Applications in Data Science</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Optimization/Optimization.html">1.3. Optimization</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/ML%20Problem%20Approach.html">2. ML Problem Approach</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Hypothesis%20Generation/Hypothesis%20Generation.html">2.1. Hypothesis Generation</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Hypothesis%20Generation/Hypothesis%20Introduction.html">2.1.1. Hypothesis Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Hypothesis%20Generation/Characteristics%20of%20a%20Good%20Hypothesis.html">2.1.2. Characteristics of a Good Hypothesis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Hypothesis%20Generation/Significance%20of%20Hypothesis%20Generation.html">2.1.3. Significance of Hypothesis Generation</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Hypothesis%20Generation/Hypothesis%20Generation%20Frameworks.html">2.1.4. Hypothesis Generation Frameworks</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Hypothesis%20Generation/Issue%20Tree.html">2.1.4.1. Issue Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Hypothesis%20Generation/Mind%20Map.html">2.1.4.2. Mind Map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Hypothesis%20Generation/Fishbone%20Diagram.html">2.1.4.3. Fishbone Diagram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Hypothesis%20Generation/Pyramid%20Approach.html">2.1.4.4. Pyramid Principle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Data%20Understanding/Data%20Understanding.html">2.2. Data Understanding</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Data%20Understanding/Exploratory%20Analysis.html">2.2.1. Exploratory Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Data%20Understanding/Comparitive%20Analysis.html">2.2.1.1. Comparitive Analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Data%20Understanding/Distribution%20Analysis.html">2.2.1.2. Distribution Analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Data%20Understanding/Correlation%20Analysis.html">2.2.1.3. Correlation Analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Data%20Understanding/Trend%20Analysis.html">2.2.1.4. Trend Analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Data%20Understanding/Variable%20Importance.html">2.2.1.5. Variable Importance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Data%20Understanding/Principal%20Component%20Analysis.html">2.2.1.6. Principal Component Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Data%20Understanding/Domain%20Driven%20Analysis.html">2.2.2. Domain Driven Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Feature%20Engineering/Feature%20Engineering.html">2.3. Feature Engineering</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Feature%20Engineering/Feature%20Encoding.html">2.3.1. Feature Encoding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Feature%20Engineering/Feature%20Transformation.html">2.3.2. Feature Transformation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Feature%20Engineering/Feature%20Scaling.html">2.3.3. Feature Scaling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Feature%20Engineering/Feature%20Discretization.html">2.3.4. Feature Discretization</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Feature%20Selection/Feature%20Selection.html">2.4. Feature Selection</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Feature%20Selection/Filter%20Approach.html">2.4.1. Filter Approach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Feature%20Selection/Wrapper%20Approach.html">2.4.2. Wrapper Approach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Feature%20Selection/Embedded%20Approach.html">2.4.3. Embedded Approach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Feature%20Selection/Hybrid%20Approach.html">2.4.4. Hybrid Approach</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Handling%20Missing%20Data/Handling%20Missing%20Data.html">2.5. Handling Missing Data</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Handling%20Missing%20Data/Missing%20Data%20Pattern%20Detection.html">2.5.1. Missing Data Pattern Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Handling%20Missing%20Data/Missing%20Data%20Deletion.html">2.5.2. Missing Data Deletion</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Handling%20Missing%20Data/Missing%20Data%20Imputation.html">2.5.3. Missing Data Imputation</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Handling%20Missing%20Data/Simple%20Imputation.html">2.5.3.1. Simple Imputation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Handling%20Missing%20Data/Multiple%20Imputation.html">2.5.3.2. Multiple Imputation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../ML%20Problem%20Approach/Handling%20Missing%20Data/Model%20Based%20Imputation.html">2.5.3.3. Model Based Imputation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Handling%20Outliers/Handling%20Outliers.html">2.6. Handling Outliers</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Handling%20Outliers/Outlier%20Detection.html">2.6.1. Detecting Outliers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Handling%20Outliers/Outlier%20Treatment.html">2.6.2. Outlier Treatment</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Hyperparameter%20Optimization/Hyperparameter%20Optimization.html">2.7. Hyper Parameter Optimization</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Hyperparameter%20Optimization/Grid%20Search.html">2.7.1. Grid Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Hyperparameter%20Optimization/Random%20Search.html">2.7.2. Random Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Hyperparameter%20Optimization/Bayesian%20Search.html">2.7.3. Bayesian Search</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Model%20Explainability/Model%20Explainability.html">2.8. Model Explainability</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Model%20Explainability/Local%20Explainability.html">2.8.1. Local Explainability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Model%20Explainability/Global%20Explainability.html">2.8.2. Global Explainability</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../ML%20Problem%20Approach/Model%20Validation/Model%20Validation.html">2.9. Model Validation</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Model%20Validation/Cross%20Validation.html">2.9.1. Cross Validation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Model%20Validation/Evaluation%20Metrics.html">2.9.2. Evaluation Metrics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Model%20Validation/Learning%20Curves.html">2.9.3. Learning Curves</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ML%20Problem%20Approach/Model%20Validation/Error%20Curves.html">2.9.4. Model Validation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Statistics/Statistics.html">3. Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Statistics/Probability/Probability.html">3.1. Probability</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Probability/Key%20Ideas.html">3.1.1. Key Ideas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Probability/Probability%20Axioms.html">3.1.2. Probability Axioms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Probability/Types%20of%20Probability.html">3.1.3. Types of Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Probability/Frequentist%20vs%20Bayesian%20Approach.html">3.1.4. Frequentist vs Bayesian Approach</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Statistics/Sampling/Sampling.html">3.2. Sampling</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Sampling/Types%20of%20Sampling.html">3.2.1. Types of Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Sampling/Sampling%20Bias.html">3.2.2. Sampling</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Statistics/Descriptive%20Statistics/Descriptive%20Statistics.html">3.3. Descriptive Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Descriptive%20Statistics/Concepts.html">3.3.1. Concepts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Descriptive%20Statistics/Types%20of%20Variables.html">3.3.2. Types of Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Descriptive%20Statistics/Data%20Distribution.html">3.3.3. Data Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Descriptive%20Statistics/Measure%20of%20Central%20Tendency.html">3.3.4. Measures of Central Tendency</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Statistics/Inferential%20Statistics/Inferential%20Statistics.html">3.4. Inferential Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Inferential%20Statistics/Core%20Ideas.html">3.4.1. Core Ideas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Inferential%20Statistics/Hypothesis%20Testing.html">3.4.2. Hypothesis Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Inferential%20Statistics/Confidence%20Interval.html">3.4.3. Confidence Interval</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Inferential%20Statistics/Central%20Limit%20Theorem.html">3.4.4. Central Limit Theorem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Inferential%20Statistics/Correlation%20vs%20Causation.html">3.4.5. Correlation vs Causation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Statistics/Hypothesis%20Testing/Hypothesis%20Testing.html">3.5. Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Hypothesis%20Testing/Core%20Ideas.html">3.5.1. Core Ideas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Hypothesis%20Testing/Parametric%20Tests.html">3.5.2. Parametric Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Statistics/Hypothesis%20Testing/Non%20Parametric%20Tests.html">3.5.3. Non Parametric Tests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Regression/Regression.html">4. Regression</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Regression/Fundamentals/Core%20Ideas.html">4.1. Core Ideas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Regression/Model%20Metrics/Model%20Metrics.html">4.2. Model Metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Regression/Model%20Selection/Model%20Selection.html">4.3. Model Selection</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Regression/Widely%20Used%20Techniques/Widely%20Used%20Techniques.html">4.4. Widely Used Techniques</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Regression/Widely%20Used%20Techniques/Linear%20Models.html">4.4.1. Linear Models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Regression/Widely%20Used%20Techniques/Non%20Linear%20Models.html">4.4.2. Non Linear Models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Classification%20Technique/Classification%20Technique.html">5. Classification Technique</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Classification%20Technique/Classification%20Concept/Classification%20Concept.html">5.1. Classification Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Classification%20Technique/Classification%20Metrics/Classification%20Metrics.html">5.2. Classification Metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Classification%20Technique/Multi%20Class%20Classification/Multi%20Class%20Classification.html">5.3. Multi Class Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Classification%20Technique/Multi%20Label%20Classification/Multi%20Label%20Classification.html">5.4. Multi Label Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Classification%20Technique/Classification%20Model%20Selection/Classification%20Model%20Selection.html">5.5. Classification Model Selection</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Classification%20Technique/Widely%20Used%20Methods/Widely%20Used%20Methods.html">5.6. Widely Used Methods</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Classification%20Technique/Widely%20Used%20Methods/Logistic%20Regression.html">5.6.1. Logistic Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Classification%20Technique/Widely%20Used%20Methods/Naive%20Bayes.html">5.6.2. Naive Bayes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Classification%20Technique/Widely%20Used%20Methods/SVM%20%28Support%20Vector%20Machine%29.html">5.6.3. SVM (Support Vector Machine)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Classification%20Technique/Widely%20Used%20Methods/KNN%20%28K-Nearest%20Neighbors%20Algorithm%29.html">5.6.4. KNN (K-Nearest Neighbors Algorithm)</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Classification%20Technique/Decision%20Tree/Decision%20Tree.html">5.7. DECISION TREE</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Classification%20Technique/Decision%20Tree/ID3.html">5.7.1. ID3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Classification%20Technique/Decision%20Tree/CART.html">5.7.2. CART</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Classification%20Technique/Decision%20Tree/CHAID.html">5.7.3. CHAID</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Classification%20Technique/Ensemble/Ensemble.html">5.8. Ensemble</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-28"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Classification%20Technique/Ensemble/Bagging%20%28Bootstraped%20Aggregation%29.html">5.8.1. Bagging (Bootstraped Aggregation)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Classification%20Technique/Ensemble/Boosting.html">5.8.2. Boosting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Recommendation%20System/Recommendation%20System.html">6. Recommendation System</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-29"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Recommendation%20System/Collaborative%20Based%20Filtering/Collaborative%20Based%20Filtering.html">6.1. Collaborative Based Filtering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Recommendation%20System/Content%20Based%20Filtering/Content%20Based%20Filtering.html">6.2. Content Based Filtering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Recommendation%20System/Evaluation%20of%20Recommender%20Algorithms/Evaluation%20of%20Recommender%20Algorithms.html">6.3. Evalation of Recommender Algorithms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Recommendation%20System/Singular%20Value%20Decomposition/Singular%20Value%20Decomposition.html">6.4. Singular Value Decomposition</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unsupervised%20Learning/Unsupervised%20Learning.html">7. Unsupervised Learning</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-30"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Unsupervised%20Learning/Concepts/Concepts.html">7.1. Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Unsupervised%20Learning/Gaussian-Mix%20Model%20%28EM%29/Gaussian-Mix%20Model%20%28EM%29.html">7.2. Gaussian-Mix Model (EM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Unsupervised%20Learning/PCA%20%28Principle%20Component%20Analysis%29/PCA%20%28Principle%20Component%20Analysis%29.html">7.3. PCA (Principle Component Analysis)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Unsupervised%20Learning/Self%20Organizing%20Maps%20%28SOM%29/Self%20Organizing%20Maps%20%28SOM%29.html">7.4. Self Organizing Maps (SOM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Unsupervised%20Learning/UL%20Evaluation%20Metrics/UL%20Evaluation%20Metrics.html">7.5. UL Evaluation Metrics</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Unsupervised%20Learning/Clustering/Clustering.html">7.6. Clustering</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-31"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Unsupervised%20Learning/Clustering/Fuzzy%20Clustering.html">7.6.1. Fuzzy Clustering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Unsupervised%20Learning/Clustering/Hierarchical%20Cluster.html">7.6.2. Hierarchical Clusterr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Unsupervised%20Learning/Clustering/K-Means.html">7.6.3. K-Means</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Unsupervised%20Learning/Clustering/K-Medians.html">7.6.4. K-Medians</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Time%20Series%20Analysis/Time%20Series%20Analysis.html">8. Time Series Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-32"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Time%20Series%20Analysis/Time-Series%20Concepts/Time-Series%20Concepts.html">8.1. Time Series Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Time%20Series%20Analysis/AutoCorrelation%20and%20Partial%20AutoCorrelation/AutoCorrelation%20and%20Partial%20AutoCorrelation.html">8.2. AutoCorrelation And Partial AutoCorrelation</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Classical%20Time%20Series%20Models.html">8.3. Classical Time Series Models</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-33"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Univariate%20Time%20Series/Univariate%20Time%20Series.html">8.3.1. Univariate Time Series</a><input class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-34"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Univariate%20Time%20Series/ARIMA.html">8.3.1.1. ARIMA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Univariate%20Time%20Series/SARIMA.html">8.3.1.2. SARIMA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Univariate%20Time%20Series/ETS.html">8.3.1.3. ETS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Univariate%20Time%20Series/Prophet.html">8.3.1.4. Prophet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Univariate%20Time%20Series/UCM.html">8.3.1.5. UCM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Univariate%20Time%20Series/Croston.html">8.3.1.6. Croston</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Multivariate%20Time%20Series/Multivariate%20Time%20Series.html">8.3.2. Multivariate Time Series</a><input class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-35"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Multivariate%20Time%20Series/ARIMAX.html">8.3.2.1. ARIMAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Multivariate%20Time%20Series/VAR.html">8.3.2.2. VAR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Multivariate%20Time%20Series/VARMA%20and%20VARMAX.html">8.3.2.3. VARMA &amp; VARMAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Time%20Series%20Analysis/Classical%20Time%20Series%20Models/Multivariate%20Time%20Series/VECM.html">8.3.2.4. VECM</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Time%20Series%20Analysis/Stationarity%20Tests/Stationarity%20Tests.html">8.4. Stationarity Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Time%20Series%20Analysis/Stationary%20vs%20Non%20Stationary%20Time%20Series/Stationary%20vs%20Non%20Stationary%20Time%20Series.html">8.5. Stationary vs Non Stationary Time Series</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Time%20Series%20Analysis/Time%20Series%20Decomposition/Time%20Series%20Decomposition.html">8.6. Time Series Decomposition</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Time%20Series%20Analysis/Advanced%20Time%20Series/Advanced%20Time%20Series.html">8.7. Advanced Time Series</a><input class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-36"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Time%20Series%20Analysis/Advanced%20Time%20Series/FB%20Prophet.html">8.7.1. FB Prophet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Time%20Series%20Analysis/Advanced%20Time%20Series/Gluon%20TS.html">8.7.2. Gluon TS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Time%20Series%20Analysis/Advanced%20Time%20Series/GreyKite.html">8.7.3. GreyKite</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Time%20Series%20Analysis/Time%20Series%20Forecasting%20using%20Neural%20Networks/Time%20Series%20Forecasting%20using%20Neural%20Networks.html">8.8. Time Series Forecasting using Neural Networks</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-37"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Time%20Series%20Analysis/Time%20Series%20Forecasting%20using%20Neural%20Networks/LSTM.html">8.8.1. LSTM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Time%20Series%20Analysis/Time%20Series%20Forecasting%20using%20Neural%20Networks/RNN.html">8.8.2. RNN</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Time%20Series%20Analysis/TS%20Evaluation%20Metrics/TS%20Evaluation%20Metrics.html">8.9. TS Evaluation Metrics</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Deep%20Learning/Deep%20Learning.html">9. Deep Learning</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-38"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Deep%20Learning/CNN/CNN.html">9.1. CNN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Deep%20Learning/RNN/rnn.html">9.2. RNN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Deep%20Learning/LSTM/lstm.html">9.3. LSTM</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Natural%20Language%20Processing/natural%20language%20processing.html">10. NLP</a><input class="toctree-checkbox" id="toctree-checkbox-39" name="toctree-checkbox-39" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-39"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Natural%20Language%20Processing/Representation%20Methods/represenation%20methods.html">10.1. Represenation Methods</a><input class="toctree-checkbox" id="toctree-checkbox-40" name="toctree-checkbox-40" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-40"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Natural%20Language%20Processing/Representation%20Methods/Bag%20of%20Words/bag%20of%20words.html">10.1.1. BOW</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Natural%20Language%20Processing/Pre-Processing/pre-processing.html">10.2. Pre-Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Natural%20Language%20Processing/Word2Vec/word2vec.html">10.3. Word2Vec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Natural%20Language%20Processing/NLP%20Applications/nlp%20applications.html">10.4. NLP Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../DS%20Project%20Management%20Framework/ds%20pm%20framework.html">11. DS Project Management Framework</a><input class="toctree-checkbox" id="toctree-checkbox-41" name="toctree-checkbox-41" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-41"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../DS%20Project%20Management%20Framework/CRISP%20DM/crisp%20dm.html">11.1. CRISP DM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../DS%20Project%20Management%20Framework/SEMMA/semma.html">11.2. SEMMA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../DS%20Project%20Management%20Framework/KDD/kdd.html">11.3. KDD</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../MLOps/mlops.html">12. MLOps</a><input class="toctree-checkbox" id="toctree-checkbox-42" name="toctree-checkbox-42" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-42"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../MLOps/MLOps%20Overview/mlops%20overview.html">12.1. MLOps Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MLOps/MLOps%20Landscape/mlops%20landscape.html">12.2. MLOps Landscape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MLOps/DevOps%20vs%20MLOps/devops%20vs%20mlops.html">12.3. DevOps vs MLOps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MLOps/Feature%20Stores/feature%20stores.html">12.4. Feature Stores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MLOps/Model%20Governance/model%20governance.html">12.5. Model Governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MLOps/Model%20Monitoring/model%20monitoring.html">12.6. Model Monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MLOps/Model%20Deployment/model%20deployment.html">12.7. Model Deployment</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/abenav94/Data_Science_Demystified" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/abenav94/Data_Science_Demystified/issues/new?title=Issue%20on%20page%20%2FMathematics Fundamentals/Calculus/Function Chaining.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Mathematics Fundamentals/Calculus/Function Chaining.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Function Chaining</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="function-chaining">
+<h1><span class="section-number">1.2.4. </span>Function Chaining<a class="headerlink" href="#function-chaining" title="Permalink to this heading">#</a></h1>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Mathematics Fundamentals\Calculus"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Maxima%20and%20Minima.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">1.2.3. </span>Maxima and Minima</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Applications%20in%20Data%20Science.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">1.2.5. </span>Applications in Data Science</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Abenav S
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
