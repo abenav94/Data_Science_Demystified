@@ -1,3 +1,3 @@
-## Hyper Parameter Optimization
+## Hypothesis Generation
 
-This chapter outlines the different ways of performing Hyper Parameter Optimization
+This chapter outlines the importance of Hypothesis Generation, the different frameworks that exist and how to leverage them
