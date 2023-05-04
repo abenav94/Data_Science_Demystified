@@ -41,6 +41,7 @@ chapters:
     sections:
     - file: ML Problem Approach/Data Understanding/Exploratory Analysis.md
       sections:
+      - file: ML Problem Approach/Data Understanding/Comparitive Analysis.md
       - file: ML Problem Approach/Data Understanding/Distribution Analysis.md
       - file: ML Problem Approach/Data Understanding/Correlation Analysis.md
       - file: ML Problem Approach/Data Understanding/Trend Analysis.md
@@ -202,7 +203,7 @@ chapters:
   - file: Time Series Analysis/TS Evaluation Metrics/TS Evaluation Metrics.md
 - file: Deep Learning/Deep Learning.md 
   sections:
-  - file: Deep Learning/CNN/cnn.md
+  - file: Deep Learning/CNN/CNN.md
   - file: Deep Learning/RNN/rnn.md
   - file: Deep Learning/LSTM/lstm.md
 - file: Natural Language Processing/natural language processing.md 
